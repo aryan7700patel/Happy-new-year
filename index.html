@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year ❤️</title>
+
+  <!-- Handwritten Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="playMusic()">
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="music/love.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>🎆 Happy New Year, My Love 🎆</h1>
+    <p>You made my year beautiful ❤️</p>
+  </section>
+
+  <!-- Countdown -->
+  <section class="countdown">
+    <h2>I LOVE YOU MY BABIEEEEE</h2>
+    <p id="timer"></p>
+  </section>
+
+  <!-- Message Buttons -->
+  <div class="buttons">
+    <button onclick="showMessage('')">Babie...thank you for being the best part of 2025</button>
+    <button onclick="showMessage('msg2')">I really wanna appriciate you for choosing a guy like me </button>
+    <button onclick="showMessage('msg3')">I love you to the moon and back baby </button>
+  </div>
+
+  <!-- Popups -->
+  <div class="popup" id="msg1">
+    <p>You were the best part of my year. Every smile of yours stayed with me ❤️</p>
+    <button onclick="closeMessage('msg1')">Close</button>
+  </div>
+
+  <div class="popup" id="msg2">
+    <p>No matter how hard life gets, I choose you. Always 💫</p>
+    <button onclick="closeMessage('msg2')">Close</button>
+  </div>
+
+  <div class="popup" id="msg3">
+    <p>This year, next year, every year — it’s you 🌍</p>
+    <button onclick="closeMessage('msg3')">Close</button>
+  </div>
+
+  <!-- Surprise -->
+  <section class="surprise">
+    <button onclick="unlockSurprise()">🎁 Click to unlock your surprise</button>
+    <p id="surpriseText"></p>
+  </section>
+
+  <!-- Photo Slider -->
+  <section class="gallery">
+    <h2>📸 Our Memories</h2>
+    <div class="slider">
+      <img src="photos/pic1.jpg">
+      <img src="photos/pic2.jpg">
+      <img src="photos/pic3.jpg">
+      <img src="photos/pic4.jpg">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
